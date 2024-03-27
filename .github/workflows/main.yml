@@ -1,0 +1,19 @@
+name: CI
+on:
+  push:
+    branches: [ main]
+  pull_request:
+    branches: [ main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Katalon Studio Github Action
+      uses: katalon-studio/katalon-studio-github-action@v2
+      with:
+          version: '9.3.0'
+          projectPath: '${{ github.workspace }}'
+          args: './katalonc -noSplash -runMode=console -projectPath="/home/chetan/Katalon Studio/KatalonMobile/KatalonMobile.prj" -retry=0 -testSuitePath="Test Suites/Run_TestSuite" -browserType="Android" -deviceId="CAGQQCVKMBU4WWAA" -executionProfile="default" -apiKey="fb7016b2-47ee-4d22-9e60-85b5b47f7d6b" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -webui.autoUpdateDrivers=true -appiumDirectory="/usr/local/lib/node_modules/appium"'
