@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify_login_page_negative_scenarios</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eacaf9a5-92e9-4a97-961b-6eec163c5597</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>a0bc1b7f-110a-47d7-b4f1-2c1726871163</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/credentials</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>a0bc1b7f-110a-47d7-b4f1-2c1726871163</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>username</value>
+      <variableId>d0501bfa-4b05-4fcd-b068-1163b0f90914</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>a0bc1b7f-110a-47d7-b4f1-2c1726871163</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>password</value>
+      <variableId>36127d5f-b8cc-49b7-826d-9e733b03f4a4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>a0bc1b7f-110a-47d7-b4f1-2c1726871163</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>expectedmessage</value>
+      <variableId>356c1d4e-3e36-424c-9491-6ce209195104</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('credentials')</defaultValue>
+      <description></description>
+      <id>d0501bfa-4b05-4fcd-b068-1163b0f90914</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('credentials')</defaultValue>
+      <description></description>
+      <id>36127d5f-b8cc-49b7-826d-9e733b03f4a4</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('credentials')</defaultValue>
+      <description></description>
+      <id>356c1d4e-3e36-424c-9491-6ce209195104</id>
+      <masked>false</masked>
+      <name>expectedmessage</name>
+   </variable>
+</TestCaseEntity>
