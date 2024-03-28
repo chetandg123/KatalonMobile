@@ -23,9 +23,9 @@ jobs:
             -retry=0
             -testSuitePath="Test Suites/Run_TestSuite"
             -browserType="Android"
-            -deviceId="CAGQQCVKMBU4WWAA"
+            -deviceId="${{secrets.deviceID}}"
             -executionProfile="default"
-            -apiKey="fb7016b2-47ee-4d22-9e60-85b5b47f7d6b"
+            -apiKey="${{secrets.KATALON_API_KEY}}"
             --config
             -proxy.auth.option=NO_PROXY
             -proxy.system.option=NO_PROXY
